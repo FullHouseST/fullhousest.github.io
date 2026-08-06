@@ -1,0 +1,6 @@
+{
+  "name": "Full House Studio",
+  "description": "Official website of Full House Studio, an independent Mexican production house featuring creative games, horror narratives from CalakaStudio, and cooperative adventures from PlushCraft.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap');
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-heading: "Space Grotesk", "Fredoka", "Segoe UI", sans-serif;
+  --font-body: "Montserrat", "Poppins", sans-serif;
+  --color-brand-pink: #f5004e;
+  --color-brand-red: #d1003f;
+  --color-brand-blue-dark: #1c1c1c;
+  --color-brand-blue-light: #00b4d8;
+  --color-warm-grey: #555555;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    @apply transition-colors duration-300;
+  }
+}
+
+.navbar-cutout-path {
+  clip-path: path('M 0 0 L 320 0 C 290 0, 275 32, 230 32 C 180 32, 160 12, 110 12 C 60 12, 35 40, 0 40 Z');
+}
+
