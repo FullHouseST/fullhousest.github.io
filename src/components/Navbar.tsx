@@ -56,15 +56,6 @@ export default function Navbar({
           >
             {t('nav_team')}
           </a>
-          <a
-            href="https://discord.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#5865f2] hover:bg-[#4752c4] px-5 py-2.5 rounded-full text-sm font-bold tracking-wide uppercase transition-all duration-200 shadow-md flex items-center gap-2 transform hover:-translate-y-0.5"
-          >
-            <Users className="w-4 h-4" />
-            {t('nav_community')}
-          </a>
 
           <div className="flex items-center gap-3 border-l border-white/20 pl-6">
             <button
@@ -138,15 +129,6 @@ export default function Navbar({
             className="text-2xl font-bold tracking-wide uppercase text-white hover:text-brand-pink transition-colors"
           >
             {t('nav_team')}
-          </a>
-          <a
-            href="https://discord.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mx-auto bg-brand-pink hover:bg-brand-pink/90 text-white px-8 py-3.5 rounded-full font-bold uppercase transition-transform transform active:scale-95 flex items-center gap-2 mt-4 shadow-lg"
-          >
-            <Users className="w-5 h-5" />
-            {t('nav_community')}
           </a>
         </div>
       )}

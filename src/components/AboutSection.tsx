@@ -38,8 +38,8 @@ export default function AboutSection({ currentLang, t }: AboutSectionProps) {
                 <Heart className="w-5 h-5 fill-brand-pink/20" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-slate-900 dark:text-white">100% Indie</h4>
-                <p className="text-xs text-slate-700 dark:text-slate-300 font-semibold">Desarrollo propio</p>
+                <h4 className="text-sm font-bold text-slate-900 dark:text-white">{t('about_badge1_title')}</h4>
+                <p className="text-xs text-slate-700 dark:text-slate-300 font-semibold">{t('about_badge1_body')}</p>
               </div>
             </div>
 
@@ -48,8 +48,8 @@ export default function AboutSection({ currentLang, t }: AboutSectionProps) {
                 <Compass className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-slate-900 dark:text-white">Multiplataforma</h4>
-                <p className="text-xs text-slate-700 dark:text-slate-300 font-semibold font-medium">Soporte para PC y consolas</p>
+                <h4 className="text-sm font-bold text-slate-900 dark:text-white">{t('about_badge2_title')}</h4>
+                <p className="text-xs text-slate-700 dark:text-slate-300 font-semibold font-medium">{t('about_badge2_body')}</p>
               </div>
             </div>
           </div>

@@ -18,9 +18,9 @@ export default function HeroCarousel({ currentLang, t, onOpenGame }: HeroCarouse
       badge: t('hero_new_release'),
       badgeColor: "bg-brand-red",
       description: currentLang === 'es' 
-        ? "Un thriller psicológico de suspenso centrado en la observación." 
-        : "A psychological suspense thriller focusing on observation.",
-      image: "https://img.itch.zone/aW1nLzI4NDYyMzg0LnBuZw==/315x250%23c/5qaB0R.png", // Replace with actual image URL
+        ? "Imagina despertar y ser el único humano en la tierra, el mundo ya no es tuyo...ahora es de ellos..." 
+        : "Imagine waking up and being the only human left on Earth, the world is no longer yours... now it belongs to them...",
+      image: "/public/covers/b_None.png",
     },
     {
       id: "magical-flavour",
@@ -29,9 +29,9 @@ export default function HeroCarousel({ currentLang, t, onOpenGame }: HeroCarouse
       badge: t('hero_coop_fun'),
       badgeColor: "bg-brand-blue-light",
       description: currentLang === 'es' 
-        ? "Los jugadores actúan como alquimistas coordinándose para preparar y entregar órdenes mágicas antes de que el tiempo se agote.." 
-        : "Players act as alchemists coordinating to prepare and deliver magical orders before time runs out.",
-      image: "/assets/cover-images/MagicalFlavour.png",
+        ? "Dicen que cualquiera puede dominar la alquimia... sobrevivir a una cocina llena de caos y magia es otra historia" 
+        : "They say anyone can master alchemy... surviving a kitchen full of chaos and magic is another story",
+      image: "/public/covers/c_Magical.png", 
     }
   ];
 

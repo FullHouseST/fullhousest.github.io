@@ -97,4 +97,8 @@ export interface Translations {
   quiz_result_plush: string;
   quiz_result_btn: string;
   quiz_reset_btn: string;
+  about_badge1_title: string;
+  about_badge1_body: string;
+  about_badge2_title: string;
+  about_badge2_body: string;
 }

@@ -9,9 +9,13 @@ export const translations: Record<'es' | 'en', Translations> = {
     about_title: "Desarrollo de Videojuegos Independientes",
     about_subtitle: "Quiénes Somos",
     about_p1: "Full House Studio es una productora mexicana que agrupa equipos creativos independientes para el desarrollo y publicación de videojuegos.",
-    about_p2: "Trabajamos en proyectos con enfoques diversos, desde el suspenso psicológico y el suspenso atmosférico hasta experiencias de caos cooperativo.",
+    about_p2: "Creemos que los mejores videojuegos nacen de ideas con personalidad. Diseñamos experiencias donde la jugabilidad, la dirección artística y la atención al detalle se combinan para crear momentos memorables para los jugadores.",
     about_accent_title: "Hecho en México",
     about_accent_body: "Buscamos apoyar el desarrollo de proyectos originales impulsados por la creatividad, el talento local y la pasión de hacer videojuegos de gran calidad dentro de México.",
+    about_badge1_title: "100% Indie",
+    about_badge1_body: "Desarrollo original",
+    about_badge2_title: "PC Gaming",
+    about_badge2_body: "Publicamos en Steam e Itch.io",
     games_title: "Catálogo de Juegos",
     games_subtitle: "Explora los proyectos lanzados y en desarrollo activo de nuestros estudios.",
     games_all_filter: "Ver Todos",
@@ -19,7 +23,7 @@ export const translations: Record<'es' | 'en', Translations> = {
     team_subtitle: "Dos enfoques de diseño bajo la misma red de publicación",
     footer_rights: "© 2026 Full House Studio. Todos los derechos reservados.",
     hero_new_release: "Próximo Lanzamiento",
-    hero_coop_fun: "Juego Cooperativo",
+    hero_coop_fun: "En desarrollo",
     game_details: "Detalles",
     explore_btn: "Ficha del Juego",
   },
@@ -31,9 +35,13 @@ export const translations: Record<'es' | 'en', Translations> = {
     about_title: "Independent Game Development",
     about_subtitle: "About Us",
     about_p1: "Full House Studio is a Mexican production company that brings together independent creative teams for the development and publishing of video games.",
-    about_p2: "We work on projects with diverse approaches, from psychological and atmospheric suspense to cooperative puzzle experiences.",
+    about_p2: "We believe the best video games are born from unique ideas. We design experiences where gameplay, artistic direction, and attention to detail combine to create memorable moments for players.",
     about_accent_title: "Made in Mexico",
     about_accent_body: "We aim to support the development of original projects driven by creativity, local talent, and the passion for creating high-quality video games within Mexico.",
+    about_badge1_title: "100% Indie",
+    about_badge1_body: "Original development",
+    about_badge2_title: "PC Gaming",
+    about_badge2_body: "Published on Steam and Itch.io",
     games_title: "Game Catalog",
     games_subtitle: "Explore released and actively developing projects from our studios.",
     games_all_filter: "All Games",
@@ -41,7 +49,7 @@ export const translations: Record<'es' | 'en', Translations> = {
     team_subtitle: "Two design approaches within the same publishing network",
     footer_rights: "© 2026 Full House Studio. All rights reserved.",
     hero_new_release: "Upcoming Release",
-    hero_coop_fun: "Co-op Game",
+    hero_coop_fun: "In Development",
     game_details: "Details",
     explore_btn: "Game Profile",
   }
@@ -54,14 +62,14 @@ export const games: Game[] = [
     studio: "Calaka Studio",
     studioKey: "calaka",
     shortDescription: {
-      es: "Imagina despertar y ser el único humano en la tierra, el mundo ya no es tuyo...ahora es de ellos...",
-      en: "Imagine waking up to find yourself the last human on Earth, the world is no longer yours... now it belongs to them..."
+      es: "La única salida está al otro lado de la ciudad... si logras sobrevivir al hospital.",
+      en: "The only way out is across the city... if you can survive the hospital."
     },
     longDescription: {
       es: "Tras un accidente de coche, Sam despierta confundido en un hospital vacío... o al menos, eso parece. Los pasillos están ahora infestados de extrañas criaturas... figuras altas y retorcidas, hechas de carne y hueso.",
       en: "After a car accident, Sam wakes up confused in an empty hospital... or so it seems. The hallways are now infested with strange creatures... tall, twisted figures made of flesh and bone."
     },
-    coverImage: "https://img.itch.zone/aW1nLzI4NDYyMzg0LnBuZw==/315x250%23c/5qaB0R.png", // Placeholder image, replace with actual cover image archive
+    coverImage: "/public/covers/c_None.png",
     tag: {
       es: "Suspenso Psicológico",
       en: "Psychological Suspense"
@@ -101,14 +109,14 @@ export const games: Game[] = [
     studio: "PlushCraft Studios",
     studioKey: "plush",
     shortDescription: {
-      es: "Un juego cooperativo caótico de gestión del tiempo.",
-      en: "A chaotic cooperative time-management game."
+      es: "Los grandes alquimistas no siguen recetas, solamente sobreviven al caos mágico.",
+      en: "Great alchemists don't follow recipes, they just survive the magical chaos."
     },
     longDescription: {
       es: "Un juego cooperativo caótico de gestión del tiempo. Los jugadores actúan como alquimistas coordinándose para preparar y entregar órdenes mágicas antes de que el tiempo se agote.",
       en: "A chaotic cooperative time-management game. Players act as alchemists coordinating to prepare and deliver magical orders before time runs out."
     },
-    coverImage: "/assets/cover-images/MagicalFlavour.png",
+    coverImage: "/public/covers/c_Magical.png",
     tag: {
       es: "Aventura Caótica / Cooperativa",
       en: "Chaotic Adventure / Cooperative"
@@ -147,14 +155,14 @@ export const games: Game[] = [
     studio: "Calaka Studio",
     studioKey: "calaka",
     shortDescription: {
-      es: "Bullet Hell con estética retro pixel art",
-      en: "A fast-paced bullet hell game with a retro pixel art style."
+      es: "Ábrete paso entre firewalls, antivirus y enjambres de código para convertirte en el malware definitivo.",
+      en: "Break through firewalls, antivirus, and swarms of code to become the ultimate malware."
     },
     longDescription: {
       es: "Tu misión es destruir todas las protecciones y archivos dentro de una supercomputadora para convertirte en el Malware más peligroso de todos los tiempos. Tu propósito es dominar a toda la humanidad y para lograrlo debes derrotar todo lo que se cruce en tu camino.",
       en: "Your mission is to destroy every protection and file inside a super computer so you can be the most dangerous Malware of all time. Your purpose is to domain all human kind and to achive it you must defeat everything on your sight."
     },
-    coverImage: "https://img.itch.zone/aW1nLzE2MTc2NjkzLnBuZw==/315x250%23c/Skc%2FtP.png",  // Placeholder image, replace with actual cover image archive
+    coverImage: "/public/covers/c_Malware.png", 
     tag: {
       es: "Accion / Disparos",
       en: "Action / Shooters"
@@ -193,14 +201,14 @@ export const games: Game[] = [
     studio: "PlushCraft Studios",
     studioKey: "plush",
     shortDescription: {
-      es: "¡Velocidad, caos y peluches!",
-      en: "Speed, chaos, and plushies!"
+      es: "Acelera o explota: corre, derrapa y destruye a tus rivales en carreras llenas de caos y velocidad.",
+      en: "Speed up or explode: run, slide, and destroy your rivals in races full of chaos and speed."
     },
     longDescription: {
       es: "¡Velocidad, caos y peluches! Compite en la carrera más caótica, donde deberás acelerar, sobrevivir y evitar explotar en un mundo lleno de adorables y peligrosos plushies.",
       en: "Speed, chaos, and plushies! Race through the most chaotic competition where you must accelerate, survive, and avoid exploding in a world full of adorable yet dangerous plushies."
     },
-    coverImage: "/assets/cover-images/PlushOut.png",
+    coverImage: "/public/covers/c_Plush.png",
     tag: {
       es: "Arcade Racing / Multijugador",
       en: "Arcade Racing / Multiplayer"
@@ -238,14 +246,14 @@ export const games: Game[] = [
     studio: "Calaka Studio",
     studioKey: "calaka",
     shortDescription: {
-      es: "Acción frenética donde tendrás que escapar de una prisión ubicada en la tundra más fría de Serbia.",
-      en: "Frenetic action where you must escape from a prison located in the coldest tundra of Serbia."
+      es: "Corre, dispara y sobrevive al caos de una prisión en motín donde cada segundo puede ser el último..",
+      en: "Run, shoot, and survive the chaos of a prison in riot where every second could be your last.."
     },
     longDescription: {
       es: "Alguien o Algo destruyo gran parte de las celdas de la prisión y gracias a eso se creo un motín donde todos los prisioneros lograron escapar...en una de las celdas un tipo misterioso con heridas se da cuenta de la situación y aprovecha para escapar pero tendrá que esquivar todas las trampas, obstáculos, guardias y los sangrientos pasillos  que dirigen hacia la libertad...pero tienes que escapar rapido porque tendrás muy poco tiempo.",
       en: "Someone or Something destroyed a large part of the prison cells and thanks to that a riot was created where all the prisoners managed to escape...in one of the cells a mysterious guy with injuries realizes the situation and takes advantage to escape but he will have to dodge all the traps, obstacles, guards and the bloody hallways that lead to freedom...but you have to escape fast because you will have very little time."
     },
-    coverImage: "https://img.itch.zone/aW1nLzEyMTU3MDI3LmpwZWc=/315x250%23c/cxWsQZ.jpeg", // Placeholder image, replace with actual cover image archive
+    coverImage: "/public/covers/c_Serbia.png", 
     tag: {
       es: "Acción / Aventura",
       en: "Action / Adventure"
