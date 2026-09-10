@@ -18,8 +18,12 @@ export default function Footer({ currentLang, t }: FooterProps) {
         
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-2">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 bg-white text-slate-900 rounded-xl flex items-center justify-center shadow">
-              <Home className="w-5 h-5 text-brand-pink" />
+            <div className="w-9 h-9 bg-white rounded-xl flex items-center justify-center shadow overflow-hidden p-1">
+              <img 
+                src="/FH_Ico.png" 
+                alt="Full House Studio Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="font-heading tracking-wider font-bold">
               FULL HOUSE STUDIO
@@ -30,25 +34,16 @@ export default function Footer({ currentLang, t }: FooterProps) {
         <div className="flex flex-col items-center space-y-4">
           <div className="flex items-center gap-4">
             <a
-              href="https://x.com"
+              href="https://x.com/FullHouseST"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-pink text-white flex items-center justify-center transition-all shadow-md hover:-translate-y-0.5"
               aria-label="X / Twitter"
             >
               <Twitter className="w-4 h-4 fill-current" />
-            </a>
+            </a>           
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-pink text-white flex items-center justify-center transition-all shadow-md hover:-translate-y-0.5"
-              aria-label="Facebook"
-            >
-              <Facebook className="w-4 h-4 fill-current" />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/fullhousest/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-pink text-white flex items-center justify-center transition-all shadow-md hover:-translate-y-0.5"
@@ -57,11 +52,11 @@ export default function Footer({ currentLang, t }: FooterProps) {
               <Instagram className="w-4 h-4" />
             </a>
             <a
-              href="https://twitch.tv"
+              href="https://fullhousest.itch.io/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-pink text-white flex items-center justify-center transition-all shadow-md hover:-translate-y-0.5"
-              aria-label="Twitch"
+              aria-label="Itch.io"
             >
               <Tv className="w-4 h-4" />
             </a>
