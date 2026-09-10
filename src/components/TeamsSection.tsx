@@ -2,7 +2,6 @@ import React from 'react';
 import { Language } from '../types';
 import { teams } from '../data';
 import { motion } from 'motion/react';
-import { Ghost, Puzzle, Gamepad2 } from 'lucide-react';
 
 interface TeamsSectionProps {
   currentLang: Language;
@@ -10,13 +9,6 @@ interface TeamsSectionProps {
 }
 
 export default function TeamsSection({ currentLang, t }: TeamsSectionProps) {
-  const getIcon = (iconName: string, teamKey: string) => {
-    const colorClass = teamKey === 'calaka' ? 'text-[#f5004e]' : 'text-[#00b4d8]';
-    if (iconName === 'ghost') return <Ghost className={`w-8 h-8 ${colorClass}`} />;
-    if (iconName === 'toy') return <Puzzle className={`w-8 h-8 ${colorClass}`} />;
-    return <Gamepad2 className={`w-8 h-8 ${colorClass}`} />;
-  };
-
   return (
     <section id="teams" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
       <div className="text-center space-y-3 mb-16">
@@ -43,12 +35,21 @@ export default function TeamsSection({ currentLang, t }: TeamsSectionProps) {
             }`}
           >
             <div className="relative z-10 space-y-6">
-              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl shadow-sm border select-none ${
-                team.key === 'calaka' 
-                  ? 'bg-[#f5004e]/10 border-[#f5004e]/20' 
-                  : 'bg-[#00b4d8]/10 border-[#00b4d8]/20'
-              }`}>
-                {getIcon(team.icon, team.key)}
+              
+              {/* Contenedor de Logos Inteligente (Light/Dark Mode) */}
+              <div className="w-16 h-16 select-none flex items-center justify-start">
+                {/* Logo Negro: Visible por defecto, se oculta en Dark Mode */}
+                <img 
+                  src={team.icon.light} 
+                  alt={`Logo de ${team.name}`} 
+                  className="w-full h-full object-contain object-left block dark:hidden"
+                />
+                {/* Logo Blanco: Oculto por defecto, se muestra en Dark Mode */}
+                <img 
+                  src={team.icon.dark} 
+                  alt={`Logo de ${team.name} Blanco`} 
+                  className="w-full h-full object-contain object-left hidden dark:block"
+                />
               </div>
 
               <div className="space-y-2">

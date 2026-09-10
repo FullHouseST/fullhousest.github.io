@@ -52,7 +52,10 @@ export interface Team {
   description: LocalizedString;
   gradient: string;
   borderClass: string;
-  icon: string;
+  icon: {
+    light: string;
+    dark: string;
+  };
   members?: TeamMember[];
   founded?: string;
   location?: string;

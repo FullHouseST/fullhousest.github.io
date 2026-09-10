@@ -319,7 +319,10 @@ export const teams: Team[] = [
     ],
     gradient: "from-[#1a1a1a] via-[#2d1111] to-[#121212]",
     borderClass: "border-brand-red",
-    icon: "ghost",
+    icon: {
+      light: "/public/C_Icon.png",
+      dark: "/public/C_IcoW.png"
+    },
     members: [
       { name: 'Ethan Cardenas', role: { es: 'Director Creativo & Project Manager', en: 'Creative Director & Project Manager' }, photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" },
       { name: 'Diego Muñoz', role: { es: 'Programadora de Gameplay', en: 'Gameplay Programmer' }, photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=300" },
@@ -358,7 +361,10 @@ export const teams: Team[] = [
     ],
     gradient: "from-[#0d2a4a] via-[#1b3b5f] to-[#141d26]",
     borderClass: "border-brand-blue-light",
-    icon: "toy",
+    icon: {
+      light: "/public/P_Icon.png",
+      dark: "/public/P_IcoW.png"
+    },
     members: [
       { name: 'Fernando Mendoza', role: { es: 'Lider de programación & Project Manager', en: 'Programming Director & Project Manager' }, photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300" },
       { name: 'Ariadna Reyes', role: { es: 'Directora de Arte & Diseño de Niveles', en: 'Art Director & Level Design' }, photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=300" },
