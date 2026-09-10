@@ -66,8 +66,16 @@ export const games: Game[] = [
       en: "The only way out is across the city... if you can survive the hospital."
     },
     longDescription: {
-      es: "Tras un accidente de coche, Sam despierta confundido en un hospital vacío... o al menos, eso parece. Los pasillos están ahora infestados de extrañas criaturas... figuras altas y retorcidas, hechas de carne y hueso.",
-      en: "After a car accident, Sam wakes up confused in an empty hospital... or so it seems. The hallways are now infested with strange creatures... tall, twisted figures made of flesh and bone."
+      es: [
+        "Tras un accidente de coche, Sam despierta confundido en un hospital vacío... o al menos, eso parece. Los pasillos están ahora infestados de extrañas criaturas... figuras altas y retorcidas, hechas de carne y hueso.",
+        "Los únicos sonidos que resuenan en este mundo desolado son los gruñidos de estas criaturas y el eco metálico de una transmisión de emergencia que se repite constantemente, anunciando un lugar seguro en el centro comercial. Aferrándose a cualquier atisbo de esperanza, Sam debe atravesar pasillos oscuros e infestados, mientras estas criaturas la persiguen sin descanso.",
+        "¿Podrás tú, junto con Sam, escapar de esta pesadilla?"
+      ],
+      en: [
+        "After a car accident, Sam wakes up confused in an empty hospital... or so it seems. The hallways are now infested with strange creatures... tall, twisted figures made of flesh and bone.",
+        "The only sounds left in this desolate world are the grunts of these creatures and the metalic echo of an emergency broadcast, that constantly repeats itself announcing a safe place located in the mall. Holding on to any kind of hope, Sam must go through dark and infested halls, meanwhile these creatures hunt her down retlenlessly.",
+        "Will you, alongside Sam be able to escape this nightmare?"
+      ]
     },
     coverImage: "/public/covers/c_None.png",
     tag: {
@@ -95,13 +103,13 @@ export const games: Game[] = [
       ]
     },
     steamLink: "https://store.steampowered.com/app/4077680/Nadie_te_Escucha/",
-    discordLink: "https://discord.com",
+    //discordLink: "https://discord.com",   // Placeholder Discord link, replace with actual Discord link if available
     gallery: [  // Placeholder gallery images, replace with actual gallery images
-      "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=800"
+      "/public/screenshots/s_None1.jpg",
+      "/public/screenshots/s_None2.jpg",
+      "/public/screenshots/s_None3.jpg"
     ],
-    pressKitUrl: "https://drive.google.com" // Placeholder press kit URL, replace with actual press kit link
+    pressKitUrl: "https://drive.google.com/drive/folders/1hAxFpKIFDTHcnsOZeiESiMsww2wDGSex?usp=sharing" // Placeholder press kit URL, replace with actual press kit link
   },
   {
     id: "magical-flavour",
@@ -113,8 +121,14 @@ export const games: Game[] = [
       en: "Great alchemists don't follow recipes, they just survive the magical chaos."
     },
     longDescription: {
-      es: "Un juego cooperativo caótico de gestión del tiempo. Los jugadores actúan como alquimistas coordinándose para preparar y entregar órdenes mágicas antes de que el tiempo se agote.",
-      en: "A chaotic cooperative time-management game. Players act as alchemists coordinating to prepare and deliver magical orders before time runs out."
+      es: [
+        "En un mundo donde la magia forma parte de la vida cotidiana, preparar una simple receta puede convertirse en un verdadero desastre. En una pequeña cocina llena de ingredientes, pociones y artefactos mágicos, un grupo de jóvenes alquimistas se prepara para demostrar que son capaces de dominar las recetas más complicadas.",
+        "¿Podrán trabajar juntos, dominar la magia y completar sus recetas antes de que el caos se apodere de la cocina?"
+      ],
+      en: [
+        "In a world where magic is part of everyday life, preparing a simple recipe can turn into a real disaster. In a small kitchen filled with ingredients, potions, and magical artifacts, a group of young alchemists is ready to prove they can master the most complicated recipes.",
+        "Will they be able to work together, master the magic, and complete their recipes before the chaos takes over the kitchen?"
+      ]
     },
     coverImage: "/public/covers/c_Magical.png",
     tag: {
@@ -139,15 +153,15 @@ export const games: Game[] = [
         "Adaptable difficulty for different age ranges"
       ]
     },
-    steamLink: "https://store.steampowered.com",
-    epicLink: "https://store.epicgames.com",
-    discordLink: "https://discord.com",
+    //steamLink: "https://store.steampowered.com",
+    itchLink: "https://spectragx.itch.io/magical-flavour",
+    //discordLink: "https://discord.com",
     gallery: [
-      "https://images.unsplash.com/photo-1559251606-c623743a6d76?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&q=80&w=800"
+      "/public/screenshots/s_Magical1.png",
+      "/public/screenshots/s_Magical2.png",
+      "/public/screenshots/s_Magical3.png"
     ],
-    pressKitUrl: "https://drive.google.com/drive/folders/1Lrz_PDU5vlTkdMVn_xcLE_mcRSR6EALz?usp=sharing"
+    pressKitUrl: "https://drive.google.com/drive/folders/1h8DyfwFzhVyUqjiGoau19SH-xSovDckq?usp=sharing"
   },
   {
     id: "malware-strikes",
@@ -159,8 +173,14 @@ export const games: Game[] = [
       en: "Break through firewalls, antivirus, and swarms of code to become the ultimate malware."
     },
     longDescription: {
-      es: "Tu misión es destruir todas las protecciones y archivos dentro de una supercomputadora para convertirte en el Malware más peligroso de todos los tiempos. Tu propósito es dominar a toda la humanidad y para lograrlo debes derrotar todo lo que se cruce en tu camino.",
-      en: "Your mission is to destroy every protection and file inside a super computer so you can be the most dangerous Malware of all time. Your purpose is to domain all human kind and to achive it you must defeat everything on your sight."
+      es: [
+        "Tu misión es destruir todas las protecciones y archivos de una supercomputadora para convertirte en el malware más peligroso de todos los tiempos. Tu objetivo es dominar a la humanidad y, para lograrlo, debes derrotar a todo lo que se cruce en tu camino.",
+        "¿Podrás destruir todas las defensas, conquistar el sistema y convertirte en el malware que llevará a la humanidad al borde del colapso?"
+      ],
+      en: [
+        "Your mission is to destroy all the protections and files of a supercomputer to become the most dangerous malware of all time. Your goal is to dominate humanity, and to achieve this, you must defeat everything that stands in your way.",
+        "Will you be able to destroy all defenses, conquer the system, and become the malware that will bring humanity to the brink of collapse?"
+      ]
     },
     coverImage: "/public/covers/c_Malware.png", 
     tag: {
@@ -187,7 +207,7 @@ export const games: Game[] = [
         "Language options in Spanish and regional dialects"
       ]
     },
-    steamLink: "https://store.steampowered.com",
+    itchLink: "https://elxavi.itch.io/malware-strikes",
     gallery: [
       "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&q=80&w=800",
@@ -205,8 +225,14 @@ export const games: Game[] = [
       en: "Speed up or explode: run, slide, and destroy your rivals in races full of chaos and speed."
     },
     longDescription: {
-      es: "¡Velocidad, caos y peluches! Compite en la carrera más caótica, donde deberás acelerar, sobrevivir y evitar explotar en un mundo lleno de adorables y peligrosos plushies.",
-      en: "Speed, chaos, and plushies! Race through the most chaotic competition where you must accelerate, survive, and avoid exploding in a world full of adorable yet dangerous plushies."
+      es: [
+        "¡Velocidad, caos y peluches! Compite en la carrera más caótica, donde deberás acelerar, sobrevivir y evitar explotar en un mundo lleno de adorables y peligrosos plushies.",
+        "¿Podrás dominar la pista y convertirte en el rey de los plushies?"
+      ],
+      en: [
+        "Speed, chaos, and plushies! Race through the most chaotic competition where you must accelerate, survive, and avoid exploding in a world full of adorable yet dangerous plushies.",
+        "Can you master the track and become the king of the plushies?"
+      ]
     },
     coverImage: "/public/covers/c_Plush.png",
     tag: {
@@ -231,12 +257,11 @@ export const games: Game[] = [
         "Local multiplayer support"
       ]
     },
-    steamLink: "https://store.steampowered.com",
-    epicLink: "https://store.epicgames.com",
+    itchLink: "https://plushcraftstudios.itch.io/plushout",
     gallery: [
-      "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&q=80&w=800"
+      "/public/screenshots/s_Plush1.png",
+      "/public/screenshots/s_Plush.png",
+      "/public/screenshots/s_Plush2.png"
     ],
     pressKitUrl: "https://drive.google.com" 
   },
@@ -250,8 +275,16 @@ export const games: Game[] = [
       en: "Run, shoot, and survive the chaos of a prison in riot where every second could be your last.."
     },
     longDescription: {
-      es: "Alguien o Algo destruyo gran parte de las celdas de la prisión y gracias a eso se creo un motín donde todos los prisioneros lograron escapar...en una de las celdas un tipo misterioso con heridas se da cuenta de la situación y aprovecha para escapar pero tendrá que esquivar todas las trampas, obstáculos, guardias y los sangrientos pasillos  que dirigen hacia la libertad...pero tienes que escapar rapido porque tendrás muy poco tiempo.",
-      en: "Someone or Something destroyed a large part of the prison cells and thanks to that a riot was created where all the prisoners managed to escape...in one of the cells a mysterious guy with injuries realizes the situation and takes advantage to escape but he will have to dodge all the traps, obstacles, guards and the bloody hallways that lead to freedom...but you have to escape fast because you will have very little time."
+      es: [
+        "En lo más profundo de la tundra serbia se encuentra una prisión aislada del resto del mundo. Nadie sabe exactamente qué ocurre dentro de sus muros, pero una cosa queda clara cuando el caos comienza: algo ha salido terriblemente mal.",
+        "Alguien o Algo destruyo gran parte de las celdas de la prisión y gracias a eso se creo un motín donde todos los prisioneros lograron escapar...en una de las celdas un tipo misterioso con heridas se da cuenta de la situación y aprovecha para escapar pero tendrá que esquivar todas las trampas, obstáculos, guardias y los sangrientos pasillos  que dirigen hacia la libertad...pero tienes que escapar rapido porque tendrás muy poco tiempo.",
+        "¿Aceptaras el reto? Atrévete"
+      ],
+      en: [
+        "Deep in the Serbian tundra lies a prison isolated from the rest of the world. No one knows exactly what happens within its walls, but one thing becomes clear when chaos erupts: something has gone terribly wrong.",
+        "Someone or something has destroyed a significant portion of the prison cells, leading to a riot where all the prisoners have managed to escape. In one of the cells, a mysterious figure with injuries realizes the situation and seizes the opportunity to escape. However, they must navigate through traps, obstacles, guards, and the bloody corridors that lead to freedom... but you must escape quickly because time is running out.",
+        "Will you accept the challenge? Dare to try."
+      ]
     },
     coverImage: "/public/covers/c_Serbia.png", 
     tag: {
@@ -276,12 +309,11 @@ export const games: Game[] = [
         "Short and fun arcade adventure"
       ]
     },
-    steamLink: "https://store.steampowered.com",
-    discordLink: "https://discord.com",
+    itchLink: "https://elxavi.itch.io/serbia",
     gallery: [
-      "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&q=80&w=800"
+      "/public/screenshots/s_Serbia1.png",
+      "/public/screenshots/s_Serbia2.png",
+      "/public/screenshots/s_Serbia3.png"
     ],
     pressKitUrl: "https://drive.google.com"
   }
@@ -307,15 +339,15 @@ export const teams: Team[] = [
     founded: "2024",
     location: "SLP, México",
     gallery: [
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+      "/public/photos/p_Calaka1.JPG",
+      "/public/photos/p_Calaka2.JPG",
+      "/public/photos/p_Calaka3.JPG"
     ],
     pressKitUrl: "https://drive.google.com/",
     socialLinks: [
       { type: 'twitter', url: 'https://twitter.com', label: 'Twitter/X' },
-      { type: 'youtube', url: 'https://youtube.com', label: 'YouTube' },
-      { type: 'merch', url: 'https://store.fullhousestudio.com', label: 'Official Store' }
+      { type: 'youtube', url: 'https://www.youtube.com/watch?v=a6Qyny2IDGM', label: 'YouTube' },
+      { type: 'instagram', url: 'https://www.instagram.com/calakastudio/', label: 'Instagram' }
     ],
     gradient: "from-[#1a1a1a] via-[#2d1111] to-[#121212]",
     borderClass: "border-brand-red",
@@ -327,7 +359,8 @@ export const teams: Team[] = [
       { name: 'Ethan Cardenas', role: { es: 'Director Creativo & Project Manager', en: 'Creative Director & Project Manager' }, photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" },
       { name: 'Diego Muñoz', role: { es: 'Programadora de Gameplay', en: 'Gameplay Programmer' }, photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=300" },
       { name: 'Jazmin Garcia', role: { es: 'Artista 3D & Diseñadora de Entornos', en: '3D Artist & Environment Designer' }, photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300" },
-      { name: 'Javier Flores', role: { es: 'Lider artístico y Escritor Narrativo', en: 'Artistic Leader & Narrative Writer' }, photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=300" }
+      { name: 'Javier Flores', role: { es: 'Lider artístico y Escritor Narrativo', en: 'Artistic Leader & Narrative Writer' }, photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=300" },
+      { name: 'Miguel Sánchez', role: { es: 'Auxiliar Game Producer', en: 'Game Producer Assistant' }, photo: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&q=80&w=300" }
     ]
   },
   {
@@ -349,15 +382,14 @@ export const teams: Team[] = [
     founded: "2024",
     location: "SLP, México",
     gallery: [
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+      "/public/photos/p_Plush1.jpg",
+      "/public/photos/p_Plush2.jpeg",
+      "/public/photos/p_Plush3.jpg"
     ],
     pressKitUrl: "https://drive.google.com/drive/folders/1cYqUGKaY-QocSff7FZK7zUwjizYmFMDN?usp=sharing",
     socialLinks: [
-      { type: 'twitter', url: 'https://twitter.com', label: 'Twitter/X' },
-      { type: 'discord', url: 'https://discord.com', label: 'Discord' },
-      { type: 'merch', url: 'https://store.fullhousestudio.com', label: 'Official Store' }
+      { type: 'twitter', url: 'https://x.com/PlushCraftStd', label: 'Twitter/X' },
+      { type: 'instagram', url: 'https://www.instagram.com/plushcraftstudios/', label: 'Instagram' }
     ],
     gradient: "from-[#0d2a4a] via-[#1b3b5f] to-[#141d26]",
     borderClass: "border-brand-blue-light",

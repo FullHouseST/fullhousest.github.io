@@ -8,13 +8,18 @@ export interface LocalizedString {
   en: string;
 }
 
+export interface LocalizedParagraphs {
+  es: string[];
+  en: string[];
+}
+
 export interface Game {
   id: string;
   title: string;
   studio: string;
   studioKey: StudioKey;
   shortDescription: LocalizedString;
-  longDescription: LocalizedString;
+  longDescription: LocalizedParagraphs;
   coverImage: string;
   tag: LocalizedString;
   tagColor: string;
@@ -26,7 +31,7 @@ export interface Game {
     en: string[];
   };
   steamLink?: string;
-  epicLink?: string;
+  itchLink?: string;
   discordLink?: string;
   gallery?: string[];
   pressKitUrl?: string;
@@ -39,7 +44,7 @@ export interface TeamMember {
 }
 
 export interface SocialLink {
-  type: 'twitter' | 'youtube' | 'discord' | 'merch' | 'github' | 'portfolio';
+  type: 'twitter' | 'youtube' | 'discord' | 'merch' | 'github' | 'portfolio'| 'instagram';
   url: string;
   label: string;
 }

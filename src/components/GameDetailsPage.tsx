@@ -128,16 +128,16 @@ export default function GameDetailsPage({
                     <ExternalLink className="w-4 h-4 opacity-70" />
                   </a>
                 )}
-                {game.epicLink && (
+                {game.itchLink && (
                   <a
-                    href={game.epicLink}
+                    href={game.itchLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between px-5 py-3.5 rounded-2xl bg-[#0074e4] hover:bg-[#1a88f4] text-white text-sm font-bold tracking-wide uppercase transition-all shadow-md"
+                    className="flex items-center justify-between px-5 py-3.5 rounded-2xl bg-[#e40000] hover:bg-[#f41a1a] text-white text-sm font-bold tracking-wide uppercase transition-all shadow-md"
                   >
                     <span className="flex items-center gap-2.5">
                       <Gamepad2 className="w-4 h-4" />
-                      <span>Epic Games</span>
+                      <span>itch.io</span>
                     </span>
                     <ExternalLink className="w-4 h-4 opacity-70" />
                   </a>
@@ -170,13 +170,17 @@ export default function GameDetailsPage({
             
             {/* Synopsis */}
             <div className="space-y-4">
-              <h2 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white font-heading flex items-center gap-2.5">
-                <span className="h-6 w-1.5 bg-brand-pink rounded-full" />
-                {currentLang === 'es' ? 'Sinopsis Completa' : 'Full Synopsis'}
+              <h2 className="text-2xl font-black tracking-tight text-[#1A1A1A] dark:text-white font-heading flex items-center gap-2.5">
+                <span className="h-6 w-1.5 bg-brand-red rounded-full" />
+                {currentLang === 'es' ? 'Arquitectura y Sinopsis' : 'Architecture & Synopsis'}
               </h2>
-              <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
-                {game.longDescription[currentLang]}
-              </p>
+              <div className="space-y-4">
+                {game.longDescription[currentLang].map((paragraph, index) => (
+                  <p key={index} className="text-base text-slate-700 dark:text-slate-200 leading-relaxed font-medium">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
 
             {/* Team Members */}
